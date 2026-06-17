@@ -1,0 +1,9 @@
+Las APIs actúan como puentes tecnológicos estandarizados que permiten
+centralizar y organizar el flujo de información dentro de una comunidad.
+Al unificar diferentes plataformas (como apps móviles y sitios web), una API
+facilita que los reportes de los usuarios lleguen a un único servidor de forma
+estructurada mediante formatos limpios como JSON. Esto elimina el desorden de
+recibir alertas por canales dispersos, permitiendo clasificar de manera
+automática cada incidencia según su urgencia o categoría. Además, gracias a la
+comunicación en tiempo real, los administradores pueden procesar las solicitudes
+inmediatamente y disparar respuestas comunitarias rápidas y coordinadas.

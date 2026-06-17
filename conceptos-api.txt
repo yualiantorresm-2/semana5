@@ -1,0 +1,12 @@
+Análisis y concepto de la ruta POST /reporte:
+
+1. ¿Qué hace esta ruta?
+   Esta ruta configura un endpoint que utiliza el método HTTP POST para recibir información estructurada desde el cliente. A diferencia de los métodos GET que solo consultan datos, esta ruta extrae un dato específico ("mensaje") que viene oculto y protegido dentro del cuerpo de la petición (req.body.mensaje) gracias al middleware express.json(). Una vez procesado, el servidor responde confirmando la recepción con un objeto en formato JSON que contiene el estado "Reporte recibido" y devuelve el mismo mensaje para validar que la comunicación fue exitosa.
+
+2. ¿Para qué podría servir en una aplicación comunitaria?
+   En el contexto de una plataforma o software para la comunidad (como un sistema de gestión barrial, reportes ciudadanos o atención estudiantil), esta ruta POST es fundamental para la interacción activa del usuario. Podría servir para:
+   
+   * Reportar incidencias o daños en la infraestructura (por ejemplo: "Luz de la calle principal dañada" o "Falla en los equipos del laboratorio").
+   * Enviar sugerencias, quejas o reclamos (PQR) de forma segura directamente a la base de datos de los administradores.
+   * Registrar alertas de seguridad o emergencias comunitarias en tiempo real.
+   * Crear publicaciones, solicitudes de asistencia o alertas tempranas que requieran el almacenamiento de texto dinámico por parte de un usuario.

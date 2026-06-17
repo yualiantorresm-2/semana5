@@ -1,0 +1,10 @@
+Pruebas de rutas en el navegador (puerto 3000):
+
+1. http://localhost:3000
+   Al acceder a la ruta raíz (el Home), el servidor Express responde de manera exitosa mostrando el texto "Servidor activo" en pantalla. Esta ruta confirma que el servidor backend está encendido y escuchando correctamente en el puerto local.
+
+2. http://localhost:3000/saludo
+   Al ingresar a este endpoint estático, el servidor procesa la solicitud mediante el método GET y devuelve como respuesta la cadena de texto "Hola comunidad", renderizándola directamente en la ventana del navegador.
+
+3. http://localhost:3000/mensaje/juan
+   Esta es una ruta dinámica que utiliza un parámetro llamado ":nombre". El servidor extrae el valor "juan" directamente de la URL a través de `req.params.nombre` y responde dinámicamente con el mensaje personalizado "Hola juan".
